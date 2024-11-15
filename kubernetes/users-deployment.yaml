@@ -14,4 +14,9 @@ spec:
     spec:
       containers:
         - name: users
-          image: kumudug/k8s-networking-users
+          image: kumudug/k8s-networking-users:latest
+          env:
+            - name: AUTH_ADDRESS
+              value: localhost
+        - name: auth
+          image: kumudug/k8s-networking-auth:latest
