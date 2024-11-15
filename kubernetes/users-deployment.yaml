@@ -17,6 +17,4 @@ spec:
           image: kumudug/k8s-networking-users:latest
           env:
             - name: AUTH_ADDRESS
-              value: localhost
-        - name: auth
-          image: kumudug/k8s-networking-auth:latest
+              value: "10.108.130.184"
