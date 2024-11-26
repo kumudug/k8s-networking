@@ -5,7 +5,7 @@ services:
   users:
     build: ./users-api
     environment:
-      - AUTH_SERVICE_SERVICE_HOST=auth
+      - CORE_DNS_ADDRESS=auth
     ports: 
       - "8080:8080"
   tasks:

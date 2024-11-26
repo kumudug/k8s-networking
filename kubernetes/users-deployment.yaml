@@ -15,3 +15,6 @@ spec:
       containers:
         - name: users
           image: kumudug/k8s-networking-users:latest
+          env:
+            - name: CORE_DNS_ADDRESS
+              value: "auth-service.default"
