@@ -13,5 +13,7 @@ services:
     ports: 
       - "8000:8000"
     environment:
-      TASKS_FOLDER: tasks
+      - TASKS_FOLDER=tasks
+      - CORE_DNS_ADDRESS=auth
+
     
